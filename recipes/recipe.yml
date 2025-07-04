@@ -6,7 +6,7 @@ name: kami-os
 description: This is a dumb idea.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/silverblue-main:41
 image-version: 41 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -35,7 +35,7 @@ modules:
     system:
       # If no repo information is specified, Flathub will be used by default
       install:
-        - org.zen_browser.zen
+        - app.zen_browser.zen
         - org.gnome.Loupe
         - org.vinegarhq.Sober
         - org.vinegarhq.Vinegar
