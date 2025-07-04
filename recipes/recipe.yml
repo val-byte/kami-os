@@ -35,7 +35,7 @@ modules:
     system:
       # If no repo information is specified, Flathub will be used by default
       install:
-        - org.zen-browser.zen
+        - org.zen_browser.zen
         - org.gnome.Loupe
         - org.vinegarhq.Sober
         - org.vinegarhq.Vinegar
