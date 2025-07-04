@@ -6,7 +6,7 @@ name: kami-os
 description: This is a dumb idea.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main:41
+base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 41 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
