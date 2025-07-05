@@ -24,6 +24,7 @@ modules:
       - micro
       - starship
       - alacritty
+      - gnome-tweaks
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -42,6 +43,9 @@ modules:
         - org.pulseaudio.pavucontrol
         - io.mpv.Mpv
         - com.github.neithern.g4music
+        - dev.vencord.Vesktop
+        - com.mattjakeman.ExtensionManager
+        - io.github.pwr_solaar.solaar
       remove:
         - org.gnome.eog
     user: {https://dl.flathub.org/repo/flathub.flatpakrepo} # Also add Flathub user repo, but no user packages
