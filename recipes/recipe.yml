@@ -23,8 +23,8 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-type: bling
-install:
+  - type: bling
+  install:
     - rpmfusion # install RPMFusion repos, including tainted repos & disable negativo17 repos if installed
     - ublue-update # https://github.com/ublue-os/ublue-update
     
