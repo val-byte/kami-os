@@ -12,27 +12,27 @@ image-version: 41 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  type: gnome-extensions
-  install:
+  - type: gnome-extensions
+   install:
       - AppIndicator and KStatusNotifierItem Support
       - Just Perfection
       - Dash to Dock
 
-  - type: files
-    files:
+   - type: files
+   files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  type: bling
+   - type: bling
    install:
     - rpmfusion # install RPMFusion repos, including tainted repos & disable negativo17 repos if installed
     - ublue-update # https://github.com/ublue-os/ublue-update
     
-  - type: rpm-ostree
-    repos:
+   - type: rpm-ostree
+   repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/hazel-bunny/ricing/repo/fedora-41/hazel-bunny-ricing-fedora-41.repo
-    install:
+   install:
       - micro
       - starship
       - alacritty
@@ -41,15 +41,15 @@ modules:
       - https://dl.fedoraproject.org/pub/fedora/linux/releases/41/Everything/x86_64/os/Packages/l/libXScrnSaver-1.2.4-4.fc41.x86_64.rpm
       - https://github.com/manga-download/hakuneko/releases/download/nightly-20200705.1/hakuneko-desktop_8.3.4_linux_amd64.rpm
       - https://github.com/Legcord/Legcord/releases/download/v1.1.5/Legcord-1.1.5-linux-x86_64.rpm
-    remove:
+   remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
-  - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
+   - type: default-flatpaks
+   notify: true # Send notification after install/uninstall is finished (true/false)
+   system:
       # If no repo information is specified, Flathub will be used by default
       install:
         - app.zen_browser.zen
@@ -64,7 +64,6 @@ modules:
         - com.github.taiko2k.tauonmb
       remove:
         - org.gnome.eog
-    user: {https://dl.flathub.org/repo/flathub.flatpakrepo} # Also add Flathub user repo, but no user packages
+   user: {https://dl.flathub.org/repo/flathub.flatpakrepo} # Also add Flathub user repo, but no user packages
 
-  - type: signing # this sets up the proper policy & signing files for signed images to work fully
-
+   - type: signing # this sets up the proper policy & signing files for signed images to work fully
