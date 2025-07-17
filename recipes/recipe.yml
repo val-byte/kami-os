@@ -15,7 +15,7 @@ modules:
   - type: files
     files:
       - source: system
-      	destination: /
+           destination: /
 
   - type: rpm-ostree
     repos:
