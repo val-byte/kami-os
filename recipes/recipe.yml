@@ -15,7 +15,7 @@ modules:
   - type: files
     files:
       - source: system
-           destination: /
+        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: rpm-ostree
     repos:
@@ -34,36 +34,35 @@ modules:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       - firefox
-      - firefox-langpacks
+      - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
       # If no repo information is specified, Flathub will be used by default
-        install:
-          - app.zen_browser.zen
-          - org.gnome.Extensions
-          - org.gnome.Loupe
-          - org.vinegarhq.Sober
-          - org.vinegarhq.Vinegar
-          - org.pulseaudio.pavucontrol
-          - io.mpv.Mpv
-          - com.mattjakeman.ExtensionManager
-          - io.github.pwr_solaar.solaar
-          - com.github.taiko2k.tauonmb
-        remove:
-          - org.gnome.eog
-    user: {https://dl.flathub.org/repo/flathub.flatpakrepo}
-
+      install:
+        - app.zen_browser.zen
+        - org.gnome.Loupe
+        - org.vinegarhq.Sober
+        - org.vinegarhq.Vinegar
+        - org.pulseaudio.pavucontrol
+        - io.mpv.Mpv
+        - org.gnome.Extensions
+        - com.mattjakeman.ExtensionManager
+        - io.github.pwr_solaar.solaar
+      remove:
+        - org.gnome.eog
+    user: {https://dl.flathub.org/repo/flathub.flatpakrepo} # Also add Flathub user repo, but no user packages
+   
   - type: gnome-extensions
     install:
       - AppIndicator and KStatusNotifierItem Support
       - Just Perfection
       - Dash to Dock
-
+    
   - type: bling
     install:
       - rpmfusion
       - ublue-update
 
-  - type: signing
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
