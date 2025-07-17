@@ -63,6 +63,7 @@ modules:
   - type: bling
     install:
       - rpmfusion
+      
   - type: os-release
     properties:
       ID: kami_os
