@@ -63,5 +63,11 @@ modules:
   - type: bling
     install:
       - rpmfusion
-          
+      
+  - type: os-release
+    properties:
+      ID: kami_os
+      NAME: Kami-OS
+      PRETTY_NAME: Kami-OS
+      
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
