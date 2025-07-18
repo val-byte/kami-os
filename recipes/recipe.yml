@@ -65,6 +65,7 @@ modules:
     install:
       - rpmfusion
       - uupd
+      
   - type: os-release
     properties:
       ID: kami_os
