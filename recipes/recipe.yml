@@ -64,7 +64,6 @@ modules:
   - type: bling
     install:
       - rpmfusion
-      - uupd
       
   - type: os-release
     properties:
