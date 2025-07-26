@@ -40,21 +40,24 @@ modules:
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      # If no repo information is specified, Flathub will be used by default
-      install:
-        - org.gnome.Loupe
-        - org.vinegarhq.Sober
-        - org.vinegarhq.Vinegar
-        - org.pulseaudio.pavucontrol
-        - io.mpv.Mpv
-        - org.gnome.Extensions
-        - com.mattjakeman.ExtensionManager
-        - io.github.pwr_solaar.solaar
-      remove:
+    configurations:
+      - notify: false
+        scope: system
+        repo:
+          url: https://dl.flathub.org/repo/flathub.flatpakrepo
+          name: flathub
+          title: Flathub
+        install:
+           - org.gnome.Loupe
+           - org.vinegarhq.Sober
+           - org.vinegarhq.Vinegar
+           - org.pulseaudio.pavucontrol
+           - io.mpv.Mpv
+           - org.gnome.Extensions
+           - com.mattjakeman.ExtensionManager
+           - io.github.pwr_solaar.solaar
+        remove:
         - org.gnome.eog
-    user: {https://dl.flathub.org/repo/flathub.flatpakrepo} # Also add Flathub user repo, but no user packages
    
   - type: gnome-extensions
     install:
