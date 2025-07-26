@@ -57,7 +57,7 @@ modules:
            - com.mattjakeman.ExtensionManager
            - io.github.pwr_solaar.solaar
         remove:
-        - org.gnome.eog
+           - org.gnome.eog
    
   - type: gnome-extensions
     install:
