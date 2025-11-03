@@ -20,16 +20,16 @@ modules:
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/hazel-bunny/ricing/repo/fedora-41/hazel-bunny-ricing-fedora-42.repo
+      - https://copr.fedorainfracloud.org/coprs/hazel-bunny/ricing/repo/fedora-42/hazel-bunny-ricing-fedora-42.repo
       - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
-      - https://copr.fedorainfracloud.org/coprs/val-byte/branding/repo/fedora-41/val-byte-branding-fedora-42.repo
+      - https://copr.fedorainfracloud.org/coprs/val-byte/branding/repo/fedora-42/val-byte-branding-fedora-42.repo
     install:
       - micro
       - starship
       - alacritty
       - gnome-tweaks
       - kora-icon-theme
-      - https://dl.fedoraproject.org/pub/fedora/linux/releases/41/Everything/x86_64/os/Packages/l/libXScrnSaver-1.2.4-4.fc41.x86_64.rpm
+      - https://dl.fedoraproject.org/pub/fedora/linux/releases/42/Everything/x86_64/os/Packages/l/libXScrnSaver-1.2.4-4.fc42.x86_64.rpm
       - https://github.com/manga-download/hakuneko/releases/download/nightly-20200705.1/hakuneko-desktop_8.3.4_linux_amd64.rpm
       - fastfetch
       - adwaita-fonts-all
