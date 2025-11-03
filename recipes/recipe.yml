@@ -29,7 +29,7 @@ modules:
       - alacritty
       - gnome-tweaks
       - kora-icon-theme
-      - https://dl.fedoraproject.org/pub/fedora/linux/releases/42/Everything/x86_64/os/Packages/l/libXScrnSaver-1.2.4-4.fc42.x86_64.rpm
+      - https://kojipkgs.fedoraproject.org//packages/libXScrnSaver/1.2.4/5.fc42/x86_64/libXScrnSaver-1.2.4-5.fc42.x86_64.rpm
       - https://github.com/manga-download/hakuneko/releases/download/nightly-20200705.1/hakuneko-desktop_8.3.4_linux_amd64.rpm
       - fastfetch
       - adwaita-fonts-all
