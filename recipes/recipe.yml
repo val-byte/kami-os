@@ -30,7 +30,6 @@ modules:
       - gnome-tweaks
       - kora-icon-theme
       - https://kojipkgs.fedoraproject.org//packages/libXScrnSaver/1.2.4/5.fc42/x86_64/libXScrnSaver-1.2.4-5.fc42.x86_64.rpm
-      - https://github.com/manga-download/hakuneko/releases/download/nightly-20200705.1/hakuneko-desktop_8.3.4_linux_amd64.rpm
       - fastfetch
       - adwaita-fonts-all
       - legcord
@@ -64,6 +63,7 @@ modules:
            - com.mattjakeman.ExtensionManager
            - io.github.pwr_solaar.solaar
            - app.zen_browser.zen
+           - io.github.hakuneko.HakuNeko
         remove:
            - org.gnome.eog
    
@@ -72,6 +72,7 @@ modules:
       - AppIndicator and KStatusNotifierItem Support
       - Just Perfection
       - Dash to Dock
+      - Control monitor brightness and volume with ddcutil
     
   - type: bling
     install:
