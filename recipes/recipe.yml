@@ -25,6 +25,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/val-byte/branding/repo/fedora-42/val-byte-branding-fedora-42.repo
     install:
       - micro
+      - https://github.com/Legcord/Legcord/releases/download/v1.2.2/Legcord-1.2.2-linux-x86_64.rpm
       - starship
       - alacritty
       - gnome-tweaks
@@ -32,7 +33,6 @@ modules:
       - https://kojipkgs.fedoraproject.org//packages/libXScrnSaver/1.2.4/5.fc42/x86_64/libXScrnSaver-1.2.4-5.fc42.x86_64.rpm
       - fastfetch
       - adwaita-fonts-all
-      - legcord
       - kami-os-logos
       - docker
       - docker-compose
