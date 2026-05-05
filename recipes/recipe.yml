@@ -24,7 +24,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/val-byte/branding/repo/fedora-%OS_VERSION%/val-byte-branding-fedora-%OS_VERSION%.repo
     install:
       - micro
-      - https://github.com/Legcord/Legcord/releases/download/v1.2.2/Legcord-1.2.2-linux-x86_64.rpm
+      - https://github.com/Legcord/Legcord/releases/download/v1.2.4/Legcord-1.2.4-linux-x86_64.rpm
       - starship
       - alacritty
       - gnome-tweaks
@@ -53,14 +53,11 @@ modules:
         install:
            - org.gnome.Loupe
            - org.vinegarhq.Sober
-           - org.vinegarhq.Vinegar
            - org.pulseaudio.pavucontrol
-           - io.mpv.Mpv
            - org.gnome.Extensions
            - com.mattjakeman.ExtensionManager
            - io.github.pwr_solaar.solaar
            - app.zen_browser.zen
-           - io.github.hakuneko.HakuNeko
         remove:
            - org.gnome.eog
    
