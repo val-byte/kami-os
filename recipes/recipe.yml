@@ -17,29 +17,26 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+- type: dnf
+  repos:
+    copr:
+      - atim/starship
+      - val-byte/branding
+    files:
       - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
-      - https://copr.fedorainfracloud.org/coprs/val-byte/branding/repo/fedora-%OS_VERSION%/val-byte-branding-fedora-%OS_VERSION%.repo
-    install:
-      - micro
-      - https://github.com/Legcord/Legcord/releases/download/v1.2.4/Legcord-1.2.4-linux-x86_64.rpm
+  install:
+    packages:
+      - legcord
       - starship
-      - alacritty
       - gnome-tweaks
       - fastfetch
-      - adwaita-fonts-all
       - kami-os-logos
-      - docker
-      - docker-compose
       - tailscale
       - ddcutil
-    remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
+  remove:
+    packages:
       - firefox
-      - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      - firefox-langpacks
       - fedora-logos
 
   - type: default-flatpaks
