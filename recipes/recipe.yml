@@ -17,27 +17,27 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-- type: dnf
-  repos:
-    copr:
-      - atim/starship
-      - val-byte/branding
-    files:
-      - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
-  install:
-    packages:
-      - legcord
-      - starship
-      - gnome-tweaks
-      - fastfetch
-      - kami-os-logos
-      - tailscale
-      - ddcutil
-  remove:
-    packages:
-      - firefox
-      - firefox-langpacks
-      - fedora-logos
+  - type: dnf
+    repos:
+      copr:
+        - atim/starship
+        - val-byte/branding
+      files:
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+    install:
+      packages:
+        - legcord
+        - starship
+        - gnome-tweaks
+        - fastfetch
+        - kami-os-logos
+        - tailscale
+        - ddcutil
+    remove:
+      packages:
+        - firefox
+        - firefox-langpacks
+        - fedora-logos
 
   - type: default-flatpaks
     configurations:
