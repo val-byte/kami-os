@@ -38,7 +38,8 @@ modules:
         - firefox
         - firefox-langpacks
         - fedora-logos
-- type: containerfile
+
+  - type: containerfile
     snippets:
       - |
         RUN --mount=type=bind,from=ghcr.io/ublue-os/akmods:ogc-43,src=/rpms/kernel,dst=/tmp/ogc-rpms \
