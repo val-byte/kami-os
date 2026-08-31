@@ -38,11 +38,13 @@ modules:
         - firefox
         - firefox-langpacks
         - fedora-logos
-
-  - type: containerfile
+      
+- type: containerfile
     snippets:
-      - COPY --from=ghcr.io/opengamingcollective/kernel-packages-fedora:latest-fc43 /rpms /tmp/ogc-rpms
       - |
+        FROM ghcr.io/opengamingcollective/kernel-packages-fedora:latest-fc43 AS kernel-provider
+      - |
+        COPY --from=kernel-provider /rpms /tmp/ogc-rpms
         RUN dnf5 -y install $(find /tmp/ogc-rpms -name "kernel-*.rpm") --allow-downgrade --allowerasing && \
             rm -rf /tmp/ogc-rpms
             
