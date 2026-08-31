@@ -11,7 +11,7 @@ image-version: 43 # always one generation behind latest release for stability
 
 stages:
   - name: ogc-kernel-stage
-    from: ghcr.io/ublue/akmods:ogc-{image-version}
+    from: ghcr.io/ublue-os/akmods:ogc-43
     modules: []
 
 # module configuration, executed in order
