@@ -39,7 +39,7 @@ modules:
         - firefox-langpacks
         - fedora-logos
       
-- type: containerfile
+  - type: containerfile
     snippets:
       - |
         FROM ghcr.io/opengamingcollective/kernel-packages-fedora:latest-fc43 AS kernel-provider
