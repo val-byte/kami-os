@@ -9,6 +9,10 @@ description: This is a dumb idea.
 base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 43 # always one generation behind latest release for stability
 
+stage:
+  - name: ogc-kernel-stage
+    from: ghcr.io/ublue/akmods:ogc-{image-version}
+
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
@@ -39,6 +43,12 @@ modules:
         - firefox-langpacks
         - fedora-logos
 
+  - type: containerfile
+    snippets:
+      - |
+        RUN --mount=type=bind,from=ogc-kernel-stage,src=/rpms,dst=/tmp/ogc-rpms \
+            dnf5 -y replace /tmp/ogc-rpms/*.rpm --allow-downgrade --allowerasing
+            
   - type: default-flatpaks
     configurations:
       - notify: false
