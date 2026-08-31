@@ -39,7 +39,7 @@ modules:
         - firefox-langpacks
         - fedora-logos
       
-- type: containerfile
+  - type: containerfile
     snippets:
       - |
         RUN dnf5 -y install oras tar && \
