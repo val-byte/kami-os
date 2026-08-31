@@ -39,13 +39,13 @@ modules:
         - firefox-langpacks
         - fedora-logos
       
-  - type: containerfile
+- type: containerfile
     snippets:
       - |
-        FROM ghcr.io/opengamingcollective/kernel-packages-fedora:latest-fc43 AS kernel-provider
-      - |
-        COPY --from=kernel-provider /rpms /tmp/ogc-rpms
-        RUN dnf5 -y install $(find /tmp/ogc-rpms -name "kernel-*.rpm") --allow-downgrade --allowerasing && \
+        RUN dnf5 -y install oras tar && \
+            mkdir -p /tmp/ogc-rpms && \
+            oras pull ghcr.io/opengamingcollective/kernel-packages-fedora:latest-fc43 -o /tmp/ogc-rpms && \
+            dnf5 -y install $(find /tmp/ogc-rpms -name "kernel-*.rpm") --allow-downgrade --allowerasing && \
             rm -rf /tmp/ogc-rpms
             
   - type: default-flatpaks
