@@ -42,8 +42,8 @@ modules:
   - type: containerfile
     snippets:
       - |
-        RUN --mount=type=bind,from=ghcr.io/ublue-os/akmods:ogc-43,src=/rpms,dst=/tmp/ogc-rpms \
-            dnf5 -y replace $(find /tmp/ogc-rpms -name "kernel-*.rpm") --allow-downgrade --allowerasing
+        RUN --mount=type=bind,from=ghcr.io/opengamingcollective/kernel-packages-fedora:latest-fc43,src=/rpms,dst=/tmp/ogc-rpms \
+            dnf5 -y install $(find /tmp/ogc-rpms -name "kernel-*.rpm") --allow-downgrade --allowerasing
             
   - type: default-flatpaks
     configurations:
