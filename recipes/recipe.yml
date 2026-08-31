@@ -9,7 +9,7 @@ description: This is a dumb idea.
 base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 43 # always one generation behind latest release for stability
 
-stage:
+stages:
   - name: ogc-kernel-stage
     from: ghcr.io/ublue/akmods:ogc-{image-version}
 
