@@ -38,6 +38,7 @@ modules:
         - firefox
         - firefox-langpacks
         - fedora-logos
+        - gnome-software
       
   - type: containerfile
     snippets:
@@ -64,6 +65,7 @@ modules:
            - com.mattjakeman.ExtensionManager
            - io.github.pwr_solaar.solaar
            - app.zen_browser.zen
+           - io.github.kolumni.Bazaar
         remove:
            - org.gnome.eog
    
