@@ -65,7 +65,7 @@ modules:
            - com.mattjakeman.ExtensionManager
            - io.github.pwr_solaar.solaar
            - app.zen_browser.zen
-           - io.github.kolumni.Bazaar
+           - io.github.kolunmi.Bazaar
         remove:
            - org.gnome.eog
    
