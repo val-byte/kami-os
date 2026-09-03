@@ -22,11 +22,8 @@ modules:
       copr:
         - atim/starship
         - val-byte/branding
-      files:
-        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     install:
       packages:
-        - legcord
         - starship
         - gnome-tweaks
         - fastfetch
@@ -66,6 +63,7 @@ modules:
            - io.github.pwr_solaar.solaar
            - app.zen_browser.zen
            - io.github.kolunmi.Bazaar
+           - app.legcord.Legcord
         remove:
            - org.gnome.eog
    
@@ -74,7 +72,7 @@ modules:
       - AppIndicator and KStatusNotifierItem Support
       - Just Perfection
       - Dash to Dock
-      - Control monitor brightness and volume with ddcutil
+      - Control monitor brightness and volume with ddcutil ## Note: might not work on gnome 50.
     
   - type: bling
     install:
