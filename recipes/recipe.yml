@@ -25,7 +25,6 @@ modules:
     install:
       packages:
         - starship
-        - gnome-tweaks
         - fastfetch
         - kami-os-logos
         - tailscale
@@ -55,6 +54,7 @@ modules:
           name: flathub
           title: Flathub
         install:
+           - page.tesk.Refine
            - org.gnome.Loupe
            - org.vinegarhq.Sober
            - org.pulseaudio.pavucontrol
