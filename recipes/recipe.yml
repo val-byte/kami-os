@@ -29,7 +29,9 @@ modules:
         - kami-os-logos
         - tailscale
         - ddcutil
-        - gnome-tweaks
+        - gdm
+        - gnome-session
+        - gnome-shell
     remove:
       packages:
         - firefox
@@ -55,6 +57,7 @@ modules:
           name: flathub
           title: Flathub
         install:
+           - page.tesk.Refine
            - org.gnome.Loupe
            - org.vinegarhq.Sober
            - org.pulseaudio.pavucontrol
