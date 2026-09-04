@@ -29,6 +29,7 @@ modules:
         - kami-os-logos
         - tailscale
         - ddcutil
+        - gnome-tweaks
     remove:
       packages:
         - firefox
@@ -54,7 +55,6 @@ modules:
           name: flathub
           title: Flathub
         install:
-           - page.tesk.Refine
            - org.gnome.Loupe
            - org.vinegarhq.Sober
            - org.pulseaudio.pavucontrol
@@ -72,7 +72,7 @@ modules:
       - AppIndicator and KStatusNotifierItem Support
       - Just Perfection
       - Dash to Dock
-      - Control monitor brightness and volume with ddcutil # Note: might not work on gnome 50.
+      - Control monitor brightness and volume with ddcutil
     
   - type: bling
     install:
