@@ -72,7 +72,7 @@ modules:
       - AppIndicator and KStatusNotifierItem Support
       - Just Perfection
       - Dash to Dock
-      - Control monitor brightness and volume with ddcutil ## Note: might not work on gnome 50.
+      - Control monitor brightness and volume with ddcutil # Note: might not work on gnome 50.
     
   - type: bling
     install:
