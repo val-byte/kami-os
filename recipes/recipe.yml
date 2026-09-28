@@ -86,5 +86,7 @@ modules:
       ID: kami_os
       NAME: Kami-OS
       PRETTY_NAME: Kami-OS
-      
+
+  - type: initramfs
+  
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
