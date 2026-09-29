@@ -32,6 +32,7 @@ modules:
         - gdm
         - gnome-session
         - gnome-shell
+        - plymouth-theme-spinner
     remove:
       packages:
         - firefox
