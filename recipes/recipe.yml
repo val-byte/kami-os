@@ -76,7 +76,7 @@ modules:
       - AppIndicator and KStatusNotifierItem Support
       - Just Perfection
       - Dash to Dock
-      - Control monitor brightness and volume with ddcutil
+      - Brightness control using ddcutil
     
   - type: bling
     install:
