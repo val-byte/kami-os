@@ -1,4 +1,7 @@
-# <img width="499" height="157" alt="fedora-logo" src="https://github.com/user-attachments/assets/e9f4b70c-f936-4ad3-9f0b-ca99b7962147" /> &nbsp; [![bluebuild build badge](https://github.com/val-byte/kami-os/actions/workflows/build.yml/badge.svg)](https://github.com/val-byte/kami-os/actions/workflows/build.yml)
+<img width="499" height="157" alt="fedora-logo" src="https://github.com/user-attachments/assets/603f0e70-a05e-4894-8f02-2af87adaad58" />
+
+
+&nbsp; [![bluebuild build badge](https://github.com/val-byte/kami-os/actions/workflows/build.yml/badge.svg)](https://github.com/val-byte/kami-os/actions/workflows/build.yml)
 
 This is MY personal atomic image, I like having a basic system so you won't find too many packages.
 
