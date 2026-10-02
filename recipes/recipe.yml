@@ -85,6 +85,8 @@ modules:
   - type: script
     snippets:
       - 'echo ''eval "$(starship init bash)"'' >> /etc/skel/.bashrc'
+    scripts:
+      - installsevi.sh
       
   - type: os-release
     properties:
