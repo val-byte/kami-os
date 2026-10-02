@@ -84,7 +84,7 @@ modules:
 
   - type: script
     snippets:
-    - "echo 'eval "$(starship init bash)"' >> $HOME/.bashrc'"
+    - "echo 'eval "$(starship init bash)"' >> $HOME/.bashrc"
       
   - type: os-release
     properties:
