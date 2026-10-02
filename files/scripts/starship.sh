@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-echo 'eval "$(starship init bash)"' >> ~/.bashrc
+set -euo pipefail
+
+echo 'eval "$(starship init bash)"' >> $HOME/.bashrc
