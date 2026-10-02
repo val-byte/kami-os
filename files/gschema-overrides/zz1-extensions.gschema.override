@@ -1,3 +1,6 @@
+[org.gnome.desktop.interface]
+monospace-font-name='Adwaita Mono 11'
+
 [org.gnome.shell.extensions.dash-to-dock]
 custom-background-color=true
 background-color='rgb(0,0,0)'
