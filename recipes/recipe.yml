@@ -27,7 +27,6 @@ modules:
         - starship
         - fastfetch
         - kami-os-logos
-        - tailscale
         - ddcutil
         - gdm
         - gnome-session
