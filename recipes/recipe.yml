@@ -38,6 +38,46 @@ modules:
         - firefox-langpacks
         - fedora-logos
         - gnome-software
+        - gnome-remote-desktop
+        - ibus-anthy
+        - ibus-anthy-python
+        - anthy-unicode
+        - ibus-hangul
+        - ibus-libpinyin
+        - libpinyin
+        - libpinyin-data
+        - ibus-m17n
+        - ibus-chewing
+        - libchewing
+        - ibus-mozc
+        - mozc
+        - ibus-unikey
+        - kasumi-common
+        - kasumi-unicode
+        - orca
+        - brltty
+        - nfs-utils
+        - nfs-client-utils
+        - nfsv3-client-utils
+        - nfsv4-client-utils
+        - nfs-common-utils
+        - rpcbind
+        - gvfs-nfs
+        - fprintd
+        - fprintd-pam
+        - libfprint
+        - hyperv-daemons
+        - hypervfcopyd
+        - hypervkvpd
+        - hypervvssd
+        - hyperv-daemons-license
+        - rygel
+        - ModemManager
+        - ModemManager-glib
+        - NetworkManager-wwan
+        - mobile-broadband-provider-info
+        - opensc
+        - opensc-libs
       
   - type: containerfile
     snippets:
