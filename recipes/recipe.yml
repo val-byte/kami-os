@@ -83,10 +83,9 @@ modules:
       - rpmfusion
 
   - type: script
-    snippets:
-      - 'echo ''eval "$(starship init bash)"'' >> /etc/skel/.bashrc'
     scripts:
       - installsevi.sh
+      - starship.sh
       
   - type: os-release
     properties:
