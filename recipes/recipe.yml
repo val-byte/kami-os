@@ -45,7 +45,7 @@ modules:
       - |
         RUN dnf5 -y install oras tar && \
             mkdir -p /tmp/ogc-rpms && \
-            oras pull ghcr.io/opengamingcollective/kernel-packages-fedora:latest-fc43 -o /tmp/ogc-rpms && \
+            oras pull ghcr.io/opengamingcollective/kernel-packages-fedora:latest-fc44 -o /tmp/ogc-rpms && \
             dnf5 -y install $(find /tmp/ogc-rpms -name "kernel-*.rpm") --allow-downgrade --allowerasing && \
             rm -rf /tmp/ogc-rpms
             
