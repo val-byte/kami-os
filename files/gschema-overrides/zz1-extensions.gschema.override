@@ -1,5 +1,7 @@
 [org.gnome.desktop.interface]
 monospace-font-name='Adwaita Mono 11'
+icon-theme='Sevi-dark'
+color-scheme='prefer-dark'
 
 [org.gnome.shell.extensions.dash-to-dock]
 custom-background-color=true
