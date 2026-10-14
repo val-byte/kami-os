@@ -116,6 +116,10 @@ modules:
       - Just Perfection
       - Dash to Dock
       - Brightness control using ddcutil
+
+  - type: gschema-overrides
+    include:
+      - zz1-extensions.gschema.override
     
   - type: bling
     install:
