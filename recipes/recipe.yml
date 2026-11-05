@@ -107,6 +107,7 @@ modules:
            - app.zen_browser.zen
            - io.github.kolunmi.Bazaar
            - org.equicord.equibop
+           - org.gnome.texteditor
         remove:
            - org.gnome.eog
    
